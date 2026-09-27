@@ -15,5 +15,3 @@ config_tree.txt
 *perf_logs*.txt
 
 # Local data and regression tests are excluded from the public repository.
-/data/
-/tests/
