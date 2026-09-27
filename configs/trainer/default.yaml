@@ -1,0 +1,11 @@
+_target_: pytorch_lightning.Trainer
+
+accelerator: 'gpu'
+devices: [0]
+default_root_dir: ${hydra:runtime.output_dir}
+
+min_epochs: 10
+max_epochs: ${train.max_epochs}
+deterministic: True
+inference_mode: False
+profiler: null # Set trainer.profiler=advanced only when profiling is needed.

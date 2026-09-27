@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vscode/
+.idea/
+.env
+.env.*
+*.ckpt
+*.prof
+logs/
+wandb/
+tensorboard/
+config_tree.txt
+*perf_logs*.txt
+
+# Local data and regression tests are excluded from the public repository.

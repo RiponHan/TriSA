@@ -1,0 +1,20 @@
+_target_: src.datamodules.trisa_datamodule.TriSADataModule
+
+batch_size: ${train.batch_size}
+num_workers: 1
+mashup_num: ${data.mashup_num}
+api_num: ${data.api_num}
+neg_k: ${train.neg_k}
+seed: ${seed}
+
+train_edges_path: ${data.train_edges_path}
+val_edges_path: ${data.val_edges_path}
+test_edges_path: ${data.test_edges_path}
+
+api_embedding_pt: ${data.api_embedding_pt}
+mashup_embedding_pt: ${data.mashup_embedding_pt}
+api_nodes_path: ${data.api_nodes_path}
+
+sample_k_min: ${train.sample_k_min}
+sample_k_max: ${train.sample_k_max}
+max_hyperedge_size: ${train.max_hyperedge_size}

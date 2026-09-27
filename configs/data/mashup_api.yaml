@@ -1,0 +1,11 @@
+mashup_num: 6424
+api_num: 1216
+
+api_embedding_pt: ${work_dir}/data/Mashup/preprocessed_data/openai_emb/api_openai_text_embedding.pt
+mashup_embedding_pt: ${work_dir}/data/Mashup/preprocessed_data/openai_emb/mashup_openai_text_embedding.pt
+
+train_edges_path: ${work_dir}/data/Mashup/left_one_data/train_edges.emb
+val_edges_path: ${work_dir}/data/Mashup/left_one_data/val_edges.emb
+test_edges_path: ${work_dir}/data/Mashup/left_one_data/test_edges.emb
+
+api_nodes_path: ${work_dir}/data/Mashup/left_one_data/api_nodes_estimator.csv

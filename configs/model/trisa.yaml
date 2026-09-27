@@ -1,0 +1,15 @@
+_target_: src.models.trisa.TriSA
+
+num_mashups: ${data.mashup_num}
+num_apis: ${data.api_num}
+text_dim: 1536
+
+hide_dim: 32
+layers: 2
+
+beta: ${train.beta}
+lambda_cl: ${train.lambda_cl}
+cl_temp: ${train.cl_temp}
+
+lr: ${train.lr}
+weight_decay: ${train.weight_decay}

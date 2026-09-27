@@ -1,0 +1,25 @@
+# @package _global_
+
+defaults:
+  - trainer: default.yaml
+  - model: trisa.yaml
+  - datamodule: trisa.yaml
+  - data: mashup_api.yaml
+  - train: default.yaml
+  - callbacks: default.yaml # set this to null if you don't want to use callbacks
+  - logger: tensorboard.yaml
+
+  - hydra: default.yaml
+  - _self_
+
+work_dir: ${hydra:runtime.cwd}
+
+debug: False
+
+print_config: True
+
+ignore_warnings: False
+
+test_after_training: True
+
+seed: 2021
